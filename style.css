@@ -1,14 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 body {
+  font-family: "sans-serif";
   display: grid;
   grid-template-columns: repeat(5, 1fr);
 }
 
+/* SIDEBAR */
 .sidebar {
   background-color: #1992d4;
+  color: #fff;
   height: 100vh;
   grid-column: 1 / 2;
+  font-weight: bold;
 }
 
+.topLogo {
+  padding: 16px;
+  font-size: 18px;
+}
+
+.nav1 ul {
+  font-size: 12px;
+  list-style: none;
+}
+
+.nav1 li {
+  padding: 6px 16px;
+}
+
+/* MAIN-CONTENT */
 .main {
   background-color: #e2e8f0;
   height: 100vh;
@@ -17,6 +41,7 @@ body {
   grid-template-rows: repeat(6, 1fr);
 }
 
+/* TOP-BAR */
 .top-bar {
   background-color: #fff;
   grid-row: 1 / 2;
