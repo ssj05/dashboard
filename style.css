@@ -9,6 +9,14 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
+img {
+  padding: 0;
+  margin: 0;
+  height: 16px;
+  vertical-align: middle;
+  filter: invert(1);
+}
+
 /* SIDEBAR */
 .sidebar {
   background-color: #1992d4;
@@ -20,16 +28,41 @@ body {
 
 .topLogo {
   padding: 16px;
-  font-size: 18px;
+  padding-bottom: 20px;
+  font-size: 16px;
 }
 
-.nav1 ul {
-  font-size: 12px;
+.topLogo img {
+  height: 32px;
+}
+
+ul {
   list-style: none;
+  margin: 0;
+}
+
+.nav1,
+.nav2 {
+  padding-left: 4px;
 }
 
 .nav1 li {
-  padding: 6px 16px;
+  padding: 6px 20px;
+  margin: 0;
+  font-size: 12px;
+}
+
+.nav2 {
+  padding-top: 28px;
+}
+
+.nav2 li {
+  padding: 6px 20px;
+  font-size: 12px;
+}
+
+span.nav {
+  padding-left: 14px;
 }
 
 /* MAIN-CONTENT */
