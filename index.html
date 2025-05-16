@@ -1,66 +1,86 @@
 <!doctype html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Dashboard</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./style.css" />
-  <title>Dashboard</title>
-</head>
-
-<body>
-  <div class="sidebar">
-    <div class="topLogo">
-      <img src="icons/view-dashboard.svg" alt="dashboard" />
-      Dashboard
+  <body>
+    <div class="sidebar">
+      <div class="topLogo">
+        <img src="icons/view-dashboard.svg" alt="dashboard" />
+        Dashboard
+      </div>
+      <div>
+        <ul class="nav1">
+          <li>
+            <img src="icons/home.svg" alt="home" />
+            <span class="nav">Home</span>
+          </li>
+          <li>
+            <img src="icons/card-account-details.svg" alt="profile" />
+            <span class="nav">Profile</span>
+          </li>
+          <li>
+            <img src="icons/message-reply.svg" alt="message" />
+            <span class="nav">Messages</span>
+          </li>
+          <li>
+            <img src="icons/clock-time-three.svg" alt="history" />
+            <span class="nav">History</span>
+          </li>
+          <li>
+            <img src="icons/file-document-multiple.svg" alt="tasks" />
+            <span class="nav">Tasks</span>
+          </li>
+          <li>
+            <img src="icons/account-group.svg" alt="communities" />
+            <span class="nav">Communities</span>
+          </li>
+        </ul>
+        <ul class="nav2">
+          <li>
+            <img src="icons/cog.svg" alt="settings" />
+            <span class="nav">Settings</span>
+          </li>
+          <li>
+            <img src="icons/help-box.svg" alt="support" />
+            <span class="nav">Support</span>
+          </li>
+          <li>
+            <img src="icons/shield-check.svg" alt="privacy" />
+            <span class="nav">Privacy</span>
+          </li>
+        </ul>
+      </div>
     </div>
-    <div>
-      <ul class="nav1">
-        <li>
-          <img src="icons/home.svg" alt="home" />
-          <span class="nav">Home</span>
-        </li>
-        <li>
-          <img src="icons/card-account-details.svg" alt="profile" />
-          <span class="nav">Profile</span>
-        </li>
-        <li>
-          <img src="icons/message-reply.svg" alt="message" />
-          <span class="nav">Messages</span>
-        </li>
-        <li>
-          <img src="icons/clock-time-three.svg" alt="history" />
-          <span class="nav">History</span>
-        </li>
-        <li>
-          <img src="icons/file-document-multiple.svg" alt="tasks" />
-          <span class="nav">Tasks</span>
-        </li>
-        <li>
-          <img src="icons/account-group.svg" alt="communities" />
-          <span class="nav">Communities</span>
-        </li>
-      </ul>
-      <ul class="nav2">
-        <li>
-          <img src="icons/cog.svg" alt="settings" />
-          <span class="nav">Settings</span>
-        </li>
-        <li>
-          <img src="icons/help-box.svg" alt="support" />
-          <span class="nav">Support</span>
-        </li>
-        <li>
-          <img src="icons/shield-check.svg" alt="privacy" />
-          <span class="nav">Privacy</span>
-        </li>
-      </ul>
+    <div class="main">
+      <div class="top-bar">
+        <div class="search">
+          <img src="icons/magnify.svg" alt="search" />
+          <input type="text" />
+          <span>
+            <img src="icons/bell-ring-outline.svg" alt="alert" />
+            <img src="images/squidle_sq.png" alt="pfp" class="pfp" />
+            Squidle
+          </span>
+        </div>
+        <div class="welcome">
+          <img src="images/squidle_sq.png" alt="squidle" class="greet pfp" />
+          <span class="hi usr">
+            <p class="hi">Hi there,</p>
+            <p class="usr">Squidle</p>
+          </span>
+          <span class="btn"
+            ><button>New</button>
+            <button>Upload</button>
+            <button>Share</button></span
+          >
+        </div>
+      </div>
+      <div class="content">cards</div>
     </div>
-  </div>
-  <div class="main">
-    <div class="top-bar">topbar</div>
-    <div class="content">cards</div>
-  </div>
-</body>
-
+  </body>
 </html>

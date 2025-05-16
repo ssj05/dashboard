@@ -9,7 +9,7 @@ body {
   grid-template-columns: repeat(5, 1fr);
 }
 
-img {
+.sidebar img {
   padding: 0;
   margin: 0;
   height: 16px;
@@ -78,4 +78,95 @@ span.nav {
 .top-bar {
   background-color: #fff;
   grid-row: 1 / 2;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+
+  img {
+    height: 16px;
+  }
+}
+
+.search {
+  padding-bottom: 0;
+  margin-bottom: 0;
+  display: flex;
+  justify-content: center;
+  padding-top: 16px;
+  padding-left: 26px;
+  padding-right: 26px;
+
+  input {
+    flex: 1 1 0;
+    height: 20px;
+    background-color: #e2e8f0;
+    border-radius: 10px;
+    border: 0px solid #e2e8f0;
+    margin-left: 12px;
+    margin-top: -2px;
+  }
+
+  span {
+    margin-left: 80px;
+    margin-right: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    gap: 10px;
+    color: black;
+    font-weight: 700;
+    font-size: 12px;
+  }
+
+  .pfp {
+    margin: 0 18px;
+    margin-top: -4px;
+    border-radius: 50%;
+    height: 26px;
+  }
+}
+
+.welcome {
+  display: grid;
+  padding-left: 26px;
+  grid-template-rows: 1fr;
+  grid-template-columns: 1fr 5fr 3fr;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 8px;
+
+  .pfp {
+    height: 48px;
+    border-radius: 50%;
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+  }
+
+  button {
+    width: 64px;
+    height: 28px;
+    border-radius: 25px;
+    border: 0px solid #1992d4;
+    background-color: #1992d4;
+    color: #fff;
+    font-size: 8px;
+    font-weight: bold;
+  }
+
+  span.btn {
+    display: flex;
+    flex-basis: -16px;
+    justify-content: space-evenly;
+    margin-right: 30px;
+    margin-left: -50px;
+  }
+
+  .hi.usr {
+    margin-left: -20px;
+    font-weight: bold;
+    color: black;
+  }
+
+  p.hi {
+    font-size: 8px;
+  }
 }
