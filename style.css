@@ -80,6 +80,7 @@ span.nav {
   grid-row: 1 / 2;
   display: grid;
   grid-template-rows: 1fr 1fr;
+  box-shadow: 0px 1px 4px grey;
 
   img {
     height: 16px;
@@ -168,5 +169,158 @@ span.nav {
 
   p.hi {
     font-size: 8px;
+  }
+}
+
+.main {
+  display: flex;
+  flex-direction: column;
+}
+
+.content {
+  flex: 1 1 0;
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  gap: 16px;
+  padding: 48px 24px 48px 16px;
+
+  /* border: 2px solid red; */
+  .card,
+  .trend,
+  .announcement {
+    background-color: #fff;
+    border-radius: 8px;
+
+    box-shadow: 1px 1px 4px grey;
+    /* border: 1px solid #000; */
+  }
+
+  .card {
+    position: relative;
+    padding: 16px;
+
+    .title {
+      font-size: 14px;
+      font-weight: bold;
+      color: #000;
+    }
+
+    .text {
+      font-size: 10px;
+      font-weight: normal;
+      color: darkslategray;
+    }
+
+    .opt {
+      img {
+        height: 16px;
+      }
+
+      position: absolute;
+      bottom: 16px;
+      right: 16px;
+      display: flex;
+      column-gap: 16px;
+    }
+
+    .label {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      top: -26px;
+      left: 0;
+    }
+  }
+
+  .card::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 4px;
+    height: 100%;
+    background-color: orange;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+  }
+
+  .info {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 16px;
+  }
+
+  .misc {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    row-gap: 42px;
+
+    .announcement {
+      padding: 16px;
+      position: relative;
+
+      .label {
+        color: #000;
+        font-size: 14px;
+        font-weight: bold;
+        position: absolute;
+        top: -26px;
+        left: 0;
+      }
+
+      span {
+        font-weight: bold;
+        font-size: 9px;
+        color: #000;
+      }
+
+      p {
+        font-weight: normal;
+        font-size: 7px;
+        color: darkslategray;
+        margin-bottom: 8px;
+      }
+
+      hr {
+        border: none;
+        border-top: 1px solid lightslategrey;
+      }
+    }
+  }
+
+  .trend {
+    position: relative;
+    padding: 16px;
+
+    .label {
+      color: #000;
+      font-size: 14px;
+      font-weight: bold;
+      position: absolute;
+      top: -26px;
+      left: 0;
+    }
+
+    .profile {
+      display: flex;
+      font-size: 10px;
+      margin-bottom: 18px;
+
+      img {
+        height: 32px;
+        border-radius: 50%;
+        margin-right: 14px;
+      }
+
+      .usr {
+        color: black;
+      }
+
+      .desc {
+        color: lightslategrey;
+      }
+    }
   }
 }
